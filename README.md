@@ -73,4 +73,4 @@ Tests cover plain text, English UI selection, GFM tables, escaped pipes, and com
 
 ## License
 
-Choose a license before the first public release. The repository currently has no license grant.
+This project is released under the [MIT License](LICENSE).
