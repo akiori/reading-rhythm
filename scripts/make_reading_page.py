@@ -17,7 +17,7 @@ LIST_ITEM = re.compile(r"^\s*(?:[-+*]|\d+[.)])\s+(.+)$")
 HEADING = re.compile(r"^\s{0,3}#{1,6}\s+(.+?)\s*#*\s*$")
 PULSE_CLASSES = ("pulse-2", "pulse-4", "pulse-1", "pulse-3", "pulse-0", "pulse-2", "pulse-4", "pulse-1")
 VENDOR_DIR = Path(__file__).resolve().parent.parent / "vendor"
-USER_DICT = Path(__file__).resolve().parent.parent / "assets" / "research_terms.txt"
+USER_DICT = Path(__file__).resolve().parent.parent / "assets" / "custom_terms.txt"
 
 if VENDOR_DIR.exists():
     sys.path.insert(0, str(VENDOR_DIR))

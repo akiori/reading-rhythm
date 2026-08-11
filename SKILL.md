@@ -1,6 +1,6 @@
 ---
 name: reading-rhythm
-description: Create a calm, attention-supportive HTML reading page from Chinese or mixed Chinese-English prose or Markdown, including responsive tables, lists, quotes, and code blocks. Use when the user asks to turn a passage, draft, research proposal, long article, pasted text, or Markdown document into a focused reading experience with visual hierarchy, varied word emphasis, Songti Chinese typography, and an elegant serif English font.
+description: Create a calm, attention-supportive HTML reading page from Chinese or mixed Chinese-English prose or Markdown, including responsive tables, lists, quotes, and code blocks. Use when the user asks to turn a passage, draft, long article, technical document, report, pasted text, or Markdown document into a focused reading experience with visual hierarchy, varied word emphasis, Songti Chinese typography, and an elegant serif English font.
 ---
 
 # Reading Rhythm / 阅读节律
@@ -19,7 +19,7 @@ description: Create a calm, attention-supportive HTML reading page from Chinese 
 python3 /Users/thor/.codex/skills/reading-rhythm/scripts/make_reading_page.py \
   --input work/source.txt \
   --title "阅读标题" \
-  --keywords "核心问题,研究对象,因果机制,研究方法,关键变量,实验设计" \
+  --keywords "关键结论,核心概念,实际案例,后续行动,重要限制,下一步" \
   --output outputs/reading-page.html
 ```
 
@@ -31,5 +31,5 @@ python3 /Users/thor/.codex/skills/reading-rhythm/scripts/make_reading_page.py \
 - 一个自然段是一个阅读单元。必要时仅按完整句子拆分超长段落，不要切断中文短语。
 - 表格整体作为一个阅读单元。保留表头、行列对齐和原始数值；不把数据行转成普通段落，不在单元外造成页面横向滚动。
 - 对 2–4 字的完整词语持续产生克制的字号、字重变化；不要把「方法部分」切成「法部分」或把「什么独特」切成「么独」。正文的字号起伏保持在约 ±6%，以接近稳定的基线为主；层次主要由少量中等偏粗词语形成，最细字不能被压成灰字，最粗字也不能让其余文字失去可读性。
-- 对基金、科研或用户反复出现的术语，在 `assets/research_terms.txt` 每行追加一个词；脚本会把它交给 jieba 的用户词典，防止专有词被错误拆开。
+- 对用户反复出现的专有词、产品名或领域术语，在 `assets/custom_terms.txt` 每行追加一个词；脚本会把它交给 jieba 的用户词典，防止专有词被错误拆开。
 - 生成页面自带 `A− / A+` 和「聚焦重点」开关；不要为简单阅读再引入登录、菜单或外部依赖。

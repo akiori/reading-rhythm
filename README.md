@@ -51,15 +51,15 @@ Try the included [English Markdown example](examples/english-demo.md).
 
 ## Chinese / 中文说明
 
-这个项目把中文长文、基金申请书或 Markdown 转成可直接打开的专注阅读网页。它不摘要、不改写，而是保留原文结构，通过字体层级、留白和少量视觉锚点帮助重新进入阅读。
+这个项目把中文、英文或混合语言的长文与 Markdown 转成可直接打开的专注阅读网页。它不摘要、不改写，而是保留原文结构，通过字体层级、留白和少量视觉锚点帮助重新进入阅读。适合长篇写作、技术文档、报告、论文、课程材料和其他需要持续阅读的内容。
 
-中文采用 `jieba` 精确分词，只对完整词语应用样式；科研或课题术语可以逐行加入 `assets/research_terms.txt`，防止专有词被误拆。关键词建议使用 2–4 个汉字，例如「图像副本」「相似异章」「可信度」「人工复核」。
+中文采用 `jieba` 精确分词，只对完整词语应用样式；反复出现的专有词、产品名或领域术语可以逐行加入 `assets/custom_terms.txt`，防止被误拆。关键词建议使用 2–4 个汉字，例如「关键结论」「实际案例」「核心概念」「后续行动」。
 
 ## Codex skill installation
 
 Clone or copy this repository to `~/.codex/skills/reading-rhythm`. In a new Codex task, ask:
 
-> Turn the following research proposal into a focused reading page with visual rhythm: …
+> Turn the following long-form document into a focused reading page with visual rhythm: …
 
 The bundled `SKILL.md` contains the interaction workflow and rendering constraints.
 
