@@ -1,0 +1,6 @@
+.venv/
+vendor/
+__pycache__/
+*.py[cod]
+.DS_Store
+examples/*.html

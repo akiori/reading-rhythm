@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reading Rhythm"
+  short_description: "将长文和 Markdown 转成有视觉节律的专注阅读页"
+  default_prompt: "Use $reading-rhythm to turn this Chinese or mixed-language text or Markdown document into a focused reading webpage."
